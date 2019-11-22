@@ -7,8 +7,25 @@
     <title>chenricky about me</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+  
+    <script>
+        function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("time").innerHTML = "Your local time is: " + h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+        }
+      </script>
   </head>
-<body>
+<body onload="startTime()">
     <div class="container-fluid">
             <ul class="nav nav-tabs">
                     <li class="nav-item">
@@ -37,10 +54,10 @@
         <script src="https://player.vimeo.com/api/player.js"></script>
         <p><a href="https://vimeo.com/261663566">The Doors - Hello I Love You (Live, Hollywood Bowl)</a> from <a href="https://vimeo.com/user64024939">Classic Musiclover</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
         <p>From July 1968, The Doors perform &quot;Hello, I Love You&quot; Live</p>
-      <script>  
-      var d = new Date();
-      document.getElementById("time").innerHTML = "Your local time is " + d;
-      </script>
+      <!-- <script>  
+      //var d = new Date();
+      //document.getElementById("time").innerHTML = "Your local time is " + d;
+      </script> -->
       <script>
       document.getElementById("browserName").innerHTML = "Your web browser is  " + navigator.appName;
       </script>

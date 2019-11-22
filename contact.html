@@ -8,8 +8,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+    <script>
+        function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("time").innerHTML = "Your local time is: " + h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+        }
+      </script>
+  </head>
+<body onload="startTime()">
     <div class="container-fluid">
             <ul class="nav nav-tabs">
                     <li class="nav-item">
@@ -31,6 +47,10 @@
                 </div>
               </div>
         <h1>Contact Me</h1>
+       
+              <a href="https://www.linkedin.com/in/ricky-chen-2343955/" target="_blank" class="btn btn-primary">Find me in Linkedin</a>
+              <a href="https://github.com/chenricky" target="_blank" class="btn btn-primary">Find me at github</a>
+     
         <div class="container contact-form">
           <div class="contact-image">
               <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
@@ -61,13 +81,13 @@
           </form>
           </div>
     </div>
-    <script>  
-        var d = new Date();
-        document.getElementById("time").innerHTML = "Your local time is " + d;
-        </script>
-        <script>
+<!-- <script>  
+        //var d = new Date();
+        //document.getElementById("time").innerHTML = "Your local time is " + d;
+</script>-->
+<script>
         document.getElementById("browserName").innerHTML = "Your web browser is  " + navigator.appName;
-        </script>
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

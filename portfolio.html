@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chenricky portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+<body>
+    <div class="container-fluid">
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+            </ul>
+            <div class="row">
+              <div class="col-sm-3 col-md-6" style="background-color: peru;">
+                <p id="time"></p>
+              </div>
+              <div class="col-sm-9 col-md-6" style="background-color:olive;">
+                <p id="browserName"></p>
+              </div>
+            </div>
+        <h1>Here are some of my projects</h1>
+        <br>
+        <h6>You can interact with the webapp direcly on the page, or click on link below in a new tab</h6>
+        <br>
+        <div class="mx-auto">
+        
+        <div class="card w-75">
+            <div class="card-body">
+              <h5 class="card-title">Giphy</h5>
+              <object type="text/html" data="https://chenricky.github.io/giphy-api-homework/" width="800px" height="600px" style="overflow:auto;border:5px ridge blue"></object>
+              <br>
+              <a href="https://github.com/chenricky/giphy-api-homework" target="_blank" class="btn btn-primary">See my codes</a>
+              <a href="https://chenricky.github.io/giphy-api-homework/" target="_blank" class="btn btn-primary">Open the webapp in new tab</a>
+            </div>
+        </div>
+
+        <div class="card w-75">
+            <div class="card-body">
+              <h5 class="card-title">Guess a word</h5>
+              <object type="text/html" data="https://chenricky.github.io/word-guess-game/" width="800px" height="600px" style="overflow:auto;border:5px ridge blue"></object>
+              <br>
+              <a href="https://github.com/chenricky/word-guess-game" target="_blank" class="btn btn-primary">See my codes</a>
+              <a href="https://chenricky.github.io/word-guess-game/" target="_blank" class="btn btn-primary">Open the webapp in new tab</a>
+            </div>
+        </div>
+
+
+        <div class="card w-75">
+            <div class="card-body">
+              <h5 class="card-title">Guess a letter</h5>
+              <object type="text/html" data="https://chenricky.github.io/Psychic-Game/" width="800px" height="600px" style="overflow:auto;border:5px ridge blue"></object>
+              <br>
+              <a href="https://github.com/chenricky/Psychic-Game" target="_blank" class="btn btn-primary">See my codes</a>
+              <a href="https://chenricky.github.io/Psychic-Game/" target="_blank" class="btn btn-primary">Open the webapp in new tab</a>
+            </div>
+        </div>
+
+        <div class="card w-75">
+            <div class="card-body">
+              <h5 class="card-title">News</h5>
+              <object type="text/html" data="https://shiprad25.github.io/Project-1-Team-04/" width="800px" height="600px" style="overflow:auto;border:5px ridge blue"></object>
+              <br>
+              <a href="https://github.com/ShipraD25/Project-1-Team-04" target="_blank" class="btn btn-primary">See my codes</a>
+              <a href="https://shiprad25.github.io/Project-1-Team-04/" target="_blank" class="btn btn-primary">Open the webapp in new tab</a>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <script>  
+      var d = new Date();
+      document.getElementById("time").innerHTML = "Your local time is " + d;
+      </script>
+      <script>
+      document.getElementById("browserName").innerHTML = "Your web browser is  " + navigator.appName;
+      </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
